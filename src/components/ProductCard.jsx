@@ -28,22 +28,6 @@ export default function ProductCard({ product: p }) {
       </div>
       <div className="product-card-body">
         <div className="product-name">{p.name}</div>
-
-        <div className="product-footer">
-        <button
-            className="enquire-btn"
-            onClick={() => {
-              const phone = "917011456805"; // replace with your number
-              const message = `Hello, I am interested in ${p.name}. Please provide more details.`;
-
-              const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-
-              window.open(url, "_blank");
-            }}
-          >
-            Enquire
-        </button>
-        </div>
       </div>
     </div>
   );

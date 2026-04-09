@@ -5,8 +5,8 @@ export default function Home() {
       <div className="hero">
         <div className="hero-contact">
           <p>
-            Phone No: +91 70114 56805
-            &nbsp;&nbsp;|&nbsp;&nbsp;
+
+
             Email: tandishpharmainfo@gmail.com
           </p>
         </div>

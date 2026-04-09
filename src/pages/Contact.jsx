@@ -32,14 +32,7 @@ export default function Contact() {
               </div>
 
               <div className="contact-info-card">
-                <h4>📞 Phone &amp; Email</h4>
-                <div className="contact-detail">
-                  <div className="contact-detail-icon">📞</div>
-                  <div className="contact-detail-text">
-                    <strong>Main Office</strong>
-                    <p>+91 70114 56805</p>
-                  </div>
-                </div>
+               
                 <div className="contact-detail">
                   <div className="contact-detail-icon">✉️</div>
                   <div className="contact-detail-text">

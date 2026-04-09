@@ -10,7 +10,7 @@ export default function Navbar() {
       {/* TOP BAR */}
       <div className="nav-top">
         <div className="nav-top-inner">
-          <span>📞 +91 70114 56805 &nbsp;|&nbsp; ✉ info@tandishpharma.com</span>
+          <span> ✉ info@tandishpharma.com</span>
           <span>
             <a href="#">ISO 9001:2015</a>
           </span>

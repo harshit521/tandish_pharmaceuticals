@@ -33,7 +33,6 @@ export default function Footer() {
         <div>
           <h4>Contact</h4>
           <div className="footer-contact-item"><span>📍</span><span>215,A - Bajrang Nagar, Dewas Madhya Pradesh-455001</span></div>
-          <div className="footer-contact-item"><span>📞</span><span>+91 70114 56805</span></div>
           <div className="footer-contact-item"><span>✉</span><span>tandishpharmainfo@gmail.com</span></div>
           <div className="footer-contact-item"><span>⏰</span><span>Mon–Sat: 9:00 AM – 6:00 PM</span></div>
         </div>
