@@ -14,6 +14,7 @@ export default function Footer() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/products">Products</Link></li>
+            <li><Link to="/tandish-pulse" style={{ color: "#7dcea0", fontWeight: "600" }}>📱 Tandish Pulse App</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Use</a></li>

@@ -47,7 +47,9 @@ export default function Navbar() {
           <Link to="/products" onClick={() => setMenuOpen(false)}>Products</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
-
+          <Link to="/tandish-pulse" className="nav-pulse-link" onClick={() => setMenuOpen(false)}>
+            📱 Tandish Pulse <span className="nav-pulse-badge">APK</span>
+          </Link>
         </div>
 
       </div>

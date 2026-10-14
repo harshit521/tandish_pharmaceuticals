@@ -4,7 +4,7 @@ import ProductCard from "../components/ProductCard";
 
 // 🔥 Firebase imports
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase";
+import { db, isFirebaseConfigured } from "../firebase";
 
 export default function Products() {
   const [products, setProducts] = useState([]); // 🔥 now dynamic
@@ -12,13 +12,21 @@ export default function Products() {
 
   // 🔥 FETCH FROM FIREBASE
   useEffect(() => {
+    if (!isFirebaseConfigured || !db) {
+      return;
+    }
+
     const fetchProducts = async () => {
-      const snapshot = await getDocs(collection(db, "products"));
-      const data = snapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()
-      }));
-      setProducts(data);
+      try {
+        const snapshot = await getDocs(collection(db, "products"));
+        const data = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        setProducts(data);
+      } catch (error) {
+        console.error("Unable to load products from Firebase.", error);
+      }
     };
 
     fetchProducts();
