@@ -1,3 +1,5 @@
+import TandishPulse from "../components/TandishPulse";
+
 export default function Home() {
   return (
     <>
@@ -74,6 +76,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* TANDISH PULSE MOBILE APP SECTION */}
+      <TandishPulse />
 
       {/* WHY CHOOSE US */}
       <section>
